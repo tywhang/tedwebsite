@@ -1,17 +1,406 @@
-<div class="jumbotron">
-  <div class="col-sm-5 col-sm-offset-2 text-center">
-    <h1>SITE UNDER CONSTRUCTION</h1>
-    <h1>Ted Whang</h1>
-    <h2>Full stack Software Engineer</h2>
-    <h3>Seattle, WA</h3>
-  </div>
-</div>
-<div class="main">
-  
-</div>
+<html dir="ltr" lang="en-US" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><script async="" src="//www.google-analytics.com/analytics.js"></script><script id="tinyhippos-injected">if (window.top.ripple) { window.top.ripple("bootstrap").inject(window, document); }</script>
+  <head>
+    <meta charset="utf-8">
+    <title>Tipi - A Responsive Static Template</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    
+    <!-- Mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" media="screen" href="<%= asset_path('reset.min.css') %>">
+    <link rel="stylesheet" type="text/css" media="screen" href="<%= asset_path('style.css') %>">
+    <link rel="stylesheet" type="text/css" media="screen" href="<%= asset_path('swipebox.min.css') %>">
+    
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <!--[if lt IE 10]>
+      <link rel="stylesheet" type="text/css" media="screen" href="assets/css/ie.css" />
+    <![endif]-->
+    
+    <!-- Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic|Oswald" rel="stylesheet" type="text/css">
+    
+    <!-- Font Icons -->
+    <link rel="stylesheet" type="text/css" href="<%= asset_path('font-awesome.min.css') %>">
+    
+    <!-- Modernizr -->
+    <script src="<%= asset_path('modernizr.min.js') %>" type="text/javascript"></script><style type="text/css"></style>
+    
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="<%= asset_path('favicon.ico') %>">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  </head>
 
-<script>
-  $(document).ready(function() {
+  <body class="home">
+    <div id="container">
+      <!-- Preloader -->
+      <div id="preloader" style="display: none;">
+          <div id="loading-animation" style="display: none;"></div>
+      </div>
+      
+      <!-- Menu Overlay -->
+      <div id="navtrigger"><span class="top"></span><span class="middle"></span><span class="middlecopy"></span><span class="bottom"></span></div>
+      
+      <div id="menuoverlay" style="height: 802px;">
+        <!-- Main Menu -->
+        <div class="col span1of4">
+            <h3>Menu</h3>
+            <nav id="main">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="typography.html">Typography</a></li>
+                    <li><a href="tables-forms.html">Tables &amp; Forms</a></li>
+                    <li><a href="404.html">404</a></li>
+                </ul>
+            </nav>
+        </div>
+          
+        <!-- Recent Posts -->
+        <div class="col span1of4">
+          <h3>Recent Posts</h3>
+          <ol>
+            <li><a href="article.html">London, UK</a></li>
+            <li><a href="article.html">New York, USA</a></li>
+            <li><a href="article.html">Paris, France</a></li>
+            <li><a href="article.html">Rome, Italy</a></li>
+            <li><a href="article.html">Lisbon, Portugal</a></li>
+            <li><a href="article.html">Berlin, Germany</a></li>
+          </ol>
+        </div>
+        
+        <!-- Archives -->   
+        <div class="col span1of4">
+          <h3>Archives</h3>
+          <ol>
+            <li><a href="">March, 2014</a></li>
+            <li><a href="">February, 2014</a></li>
+            <li><a href="">January, 2014</a></li>
+            <li><a href="">December, 2013</a></li>
+          </ol>
+        </div>
+          
+        <!-- Categories -->     
+        <div class="col span1of4">
+          <h3>Categories</h3>
+          <ul>
+            <li><a href="">Traveling</a></li>
+            <li><a href="">Personal</a></li>
+            <li><a href="">Photos</a></li>
+          </ul>
+        </div>
+        
+        <!-- Contact -->
+        <div id="contact" class="row">
+          <div class="col span3of3">
+            <i class="fa fa-envelope-o"></i>
+            <a href="mailto:hello@wearesupa.com" title="Email me">you@youremail.com</a> | 07775 123456
+          </div>
+        </div>
+      </div>
+      
+      <!-- Cover -->
+      <div id="cover">
+        <div class="inner">
+          <div class="col span3of3 parallax" style="bottom: 43.8px;">
+            <div id="logo"><img src="<%= asset_path('tipi-logo.svg') %>" alt="TIPI" title="TIPI" height="150"></div>
 
-  });
-</script>
+            <h1><span>The</span> Great Explorer</h1>
+
+            <a href="#blog" class="btn down">My Adventures</a>
+          </div>
+        </div>
+        <div class="coverimg"><img src="<%= asset_path('explorer-yellow.png') %>" alt=""></div>
+      </div>
+      
+      <div id="home" style="height: 802px;"></div>
+      
+      <!-- Main Content -->
+      <div id="contentwrap">
+          
+        <!-- Blog Panel -->
+        <div id="blog" class="row">
+          <div class="inner">
+            <div class="col span3of3">
+                <h2 class="title">My Adventures</h2>
+                <p>A tipi (also tepee and teepee) is a conical tent, traditionally made of animal skins, and wooden poles. The tipi was used by the nomadic tribes of the Great Plains.</p>
+            </div>
+          </div>
+      
+          <div class="inner">
+            <ul class="articlelist">
+              <li class="item">
+                <section class="view">
+                  <h3><a href="article.html" title="Read">London, UK</a></h3>                     
+                  <a href="article.html"><img src="<%= asset_path('travel8.jpg') %>" alt="travel8"></a>
+                      
+                  <footer>
+                    <section class="clearfix">
+                      <div class="left"><i class="fa fa-comments"></i> 20</div> <div class="right"><i class="fa fa-pencil"></i> January 10, 2014</div>
+                    </section>
+                  </footer>
+                </section>
+              </li>
+    
+              <li class="item">
+                <section class="view">
+                  <h3><a href="article.html" title="Read">New York, USA</a></h3>
+                  <a href="article.html"><img src="<%= asset_path('travel6.jpg') %>" alt="travel6"></a>               
+                  <footer>
+                    <section class="clearfix">
+                      <div class="left">
+                        <i class="fa fa-comments"></i>20
+                      </div>
+                      <div class="right">
+                        <i class="fa fa-pencil"></i>January 10, 2014
+                      </div>
+                    </section>
+                  </footer>
+                </section>
+              </li>
+      
+              <li class="item">
+                <section class="view">
+                  <h3><a href="article.html" title="Read">Paris, France</a></h3>
+                  <a href="article.html"><img src="<%= asset_path('travel7.jpg') %>" alt="travel7"></a>      
+                  <footer>
+                    <section class="clearfix">
+                      <div class="left">
+                        <i class="fa fa-comments"></i>20
+                      </div>
+                      <div class="right"><i class="fa fa-pencil"></i>
+                        January 10, 2014
+                      </div>
+                    </section>
+                  </footer>
+                </section>
+              </li>
+                  
+              <li class="item">
+                <section class="view">
+                  <h3><a href="article.html" title="Read">Rome, Italy</a></h3>                      
+                  <a href="article.html"><img src="<%= asset_path('travel9.jpg') %>" alt="travel9"></a>        
+                  <footer>
+                    <section class="clearfix">
+                      <div class="left"><i class="fa fa-comments"></i> 20</div> <div class="right"><i class="fa fa-pencil"></i> January 10, 2014</div>
+                    </section>
+                  </footer>
+                </section>
+              </li>
+
+              <li class="item">
+                <section class="view">
+                  <h3><a href="article.html" title="Read">Lisbon, Portugal</a></h3>
+                  <a href="article.html"><img src="<%= asset_path('travel10.jpg') %>" alt="travel10"></a>
+                  <footer>
+                    <section class="clearfix">
+                      <div class="left"><i class="fa fa-comments"></i> 20</div> <div class="right"><i class="fa fa-pencil"></i> January 10, 2014</div>
+                    </section>
+                  </footer>
+                </section>
+              </li>
+    
+              <li class="item">
+                <section class="view">
+                  <h3><a href="article.html" title="Read">Berlin, Germany</a></h3>
+                  <a href="article.html"><img src="<%= asset_path('travel11.jpg') %>" alt="travel11"></a>
+                  <footer>
+                    <section class="clearfix">
+                      <div class="left"><i class="fa fa-comments"></i> 20</div> <div class="right"><i class="fa fa-pencil"></i> January 10, 2014</div>
+                    </section>
+                  </footer>
+                </section>
+              </li>
+            </ul>
+            <a href="blog.html" class="btn clear">More</a>
+          </div>
+        </div>
+          
+        <!--About Panel -->
+        <div id="about" class="row nopaddingbtm">
+          <!-- About Intro -->
+          <div class="inner clearfix">
+            <h2 class="title">About</h2>
+            <div class="clear"></div>
+                      
+            <div class="col span2of4">
+              <h3>Who am I?</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut turpis pellentesque, suscipit odio pretium, pulvinar tellus. Quisque consequat lectus vel dolor feugiat pulvinar. Duis scelerisque facilisis dolor, ac adipiscing enim vehicula eu. Cras rhoncus urna sit amet libero accumsan sodales.</p>
+              <p>Sed eget ultrices ante. Sed egestas luctus neque vel sollicitudin. Ut eu volutpat urna. Nullam mi neque, pharetra non ipsum id.</p>
+            </div>
+              
+            <div class="col span2of4">
+              <h3>My Skills</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut turpis pellentesque, suscipit odio pretium, pulvinar tellus. Quisque consequat lectus vel dolor feugiat pulvinar. Duis scelerisque facilisis dolor, ac adipiscing enim vehicula eu. Cras rhoncus urna sit amet libero accumsan sodales.</p>
+              <p>Sed eget ultrices ante. Sed egestas luctus neque vel sollicitudin. Ut eu volutpat urna. Nullam mi neque, pharetra non ipsum id.</p>
+            </div>
+          </div>
+
+          <!-- Gallery -->
+          <div class="clearfix">
+            <div id="gallery">
+              <ul>
+                <li class="item">
+                  <section class="view">
+                    <a href="assets/images/blog/travel1.jpg" class="btn animated swipebox" title="Photo 1">View</a>
+                    <img src="<%= asset_path('travel1.jpg') %>" alt="travel1">
+                  </section>
+                </li>
+      
+                <li class="item">
+                  <section class="view">
+                    <a href="assets/images/blog/travel6.jpg" class="btn animated swipebox" title="Photo 2">View</a>
+                    <img src="<%= asset_path('travel6.jpg') %>" alt="travel6">
+                  </section>
+                </li>
+      
+                <li class="item">
+                  <section class="view">
+                    <a href="assets/images/blog/travel7.jpg" class="btn animated swipebox" title="Photo 3">View</a>
+                    <img src="<%= asset_path('travel7.jpg') %>" alt="travel7">
+                  </section>
+                </li>
+      
+                <li class="item">
+                  <section class="view">
+                    <a href="assets/images/blog/travel8.jpg" class="btn animated swipebox" title="Photo 4">View</a>
+                    <img src="<%= asset_path('travel8.jpg') %>" alt="travel8">
+                  </section>
+                </li>
+      
+                <li class="item">
+                  <section class="view">
+                    <a href="assets/images/blog/travel9.jpg" class="btn animated swipebox" title="Photo 5">View</a>
+                    <img src="<%= asset_path('travel9.jpg') %>" alt="travel9">
+                  </section>
+                </li>
+      
+                <li class="item">
+                  <section class="view">
+                    <a href="assets/images/blog/travel10.jpg" class="btn animated swipebox" title="Photo 6">View</a>
+                    <img src="<%= asset_path('travel10.jpg') %>" alt="travel10">
+                  </section>
+                </li>
+      
+                <li class="item">
+                  <section class="view">
+                    <a href="assets/images/blog/travel11.jpg" class="btn animated swipebox" title="Photo 7">View</a>
+                    <img src="<%= asset_path('travel11.jpg') %>" alt="travel11">
+                  </section>
+                </li>
+      
+                <li class="item">
+                  <section class="view">
+                      <a href="assets/images/blog/travel2.jpg" class="btn animated swipebox" title="Photo 8">View</a>
+                      <img src="<%= asset_path('travel2.jpg') %>" alt="travel2">
+                  </section>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+          
+        <!-- Stats Panel -->
+        <div id="statswrap" style="background-image:url(<%= asset_path('bodybkg4.jpg') %>;">
+          <div class="statsinner row">
+            <div class="inner">
+              <header>
+                <h2 class="title">Fun Facts</h2>
+              </header>
+    
+              <div class="stats">
+                <span class="timer" data-from="0" data-to="12" data-speed="3000" data-refresh-interval="50">0</span>
+                <i class="fa fa-globe"></i> Cities Visited
+              </div>
+              
+              <div class="stats">
+                <span class="timer" data-from="0" data-to="3456" data-speed="3000" data-refresh-interval="50">0</span>
+                <i class="fa fa-plane"></i> Miles Traved
+              </div>
+              
+              <div class="stats">
+                <span class="timer" data-from="0" data-to="233" data-speed="3000" data-refresh-interval="50">0</span>
+                <i class="fa fa-picture-o"></i> Photos Taken
+              </div>
+              
+              <div class="stats">
+                <span class="timer" data-from="0" data-to="455" data-speed="3000" data-refresh-interval="50">0</span>
+                  <i class="fa fa-twitter"></i> Tweets
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Footer -->
+        <div id="footer" class="row">
+          <div class="inner clearfix">
+            <div class="textblock">
+              <!-- Social Links -->
+              <div class="sociallinks">
+                <ul>
+                  <li><a href="http://twitter.com" title="Twitter" class="btn btndark">Twitter</a></li>
+                  <li><a href="http://facebook.com" title="Facebook" class="btn btndark">Facebook</a></li>
+                  <li><a href="http://instagram.com" title="Instagram" class="btn btndark">Instagram</a></li>
+                  <li><a href="http://foursquare.com" title="Foursquare" class="btn btndark">Foursquare</a></li>
+                  <li><a href="http://youtube.com" title="Youtube" class="btn btndark">Youtube</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#container" class="up scrollup" style="display: inline;">up</a>
+    </div>
+
+    <!-- Page border -->
+    <b id="tborder"></b><b id="rborder"></b><b id="bborder"></b><b id="lborder"></b>
+      
+    <!-- ==============================================
+    Scripts
+    =============================================== -->
+    <script src="<%= asset_path('jquery.min.js') %>" type="text/javascript"></script>
+    <script src="<%= asset_path('scripts.js') %>" type="text/javascript"></script>
+    <script src="<%= asset_path('jquery.global.js') %>" type="text/javascript"></script>
+    <!--/ Scripts -->
+    <div id="cboxOverlay" style="display: none;"></div>
+    <div id="colorbox" class="" role="dialog" tabindex="-1" style="display: none;">
+      <div id="cboxWrapper">
+        <div>
+          <div id="cboxTopLeft" style="float: left;"></div>
+          <div id="cboxTopCenter" style="float: left;"></div>
+          <div id="cboxTopRight" style="float: left;"></div>
+        </div>
+        <div style="clear: left;">
+          <div id="cboxMiddleLeft" style="float: left;"></div>
+          <div id="cboxContent" style="float: left;">
+            <div id="cboxTitle" style="float: left;"></div>
+            <div id="cboxCurrent" style="float: left;"></div>
+            <button id="cboxPrevious"></button>
+            <button id="cboxNext"></button>
+            <button id="cboxSlideshow"></button>
+            <div id="cboxLoadingOverlay" style="float: left;"></div>
+            <div id="cboxLoadingGraphic" style="float: left;"></div>
+            <button id="cboxClose"></button>
+          </div>
+          <div id="cboxMiddleRight" style="float: left;"></div>
+        </div>
+        <div style="clear: left;">
+          <div id="cboxBottomLeft" style="float: left;"></div>
+          <div id="cboxBottomCenter" style="float: left;"></div>
+          <div id="cboxBottomRight" style="float: left;"></div>
+        </div>
+      </div>
+      <div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div>
+    </div>
+    <div class="backstretch" style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; z-index: -999999; position: fixed; width: 1399px; height: 264px;">
+      <img src="<%= asset_path('bodybkg3.jpg') %>" style="position: absolute; margin: 0px; padding: 0px; border: none; max-height: none; max-width: none; z-index: -999999; width: 1399px; height: 927.021578947368px; left: 0px; top: -331.510789473684px;">
+    </div>
+  </body>
+</html>
